@@ -38,7 +38,7 @@ const Orders: React.FC = () => {
       setOrders(
         response.data.map((order: Food) => ({
           ...order,
-          formatedPrice: formatValue(order.price),
+          formattedPrice: formatValue(order.price),
         })),
       );
     }
